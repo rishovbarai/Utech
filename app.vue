@@ -8,6 +8,7 @@
     <NumbersSection />
     <TestimonialSection />
     <FeatureSection />
+    <JoinSection />
     <main class="flex-grow">
       <NuxtPage />
     </main>
@@ -25,6 +26,7 @@ import StudentSection from '~/components/StudentSection.vue'
 import NumbersSection from '~/components/NumbersSection.vue'
 import TestimonialSection from '~/components/TestimonialSection.vue'
 import FeatureSection from '~/components/FeatureSection.vue'
+import JoinSection from '~/components/JoinSection.vue'
 </script>
 
 <style>
