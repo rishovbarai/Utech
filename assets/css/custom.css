@@ -1,0 +1,67 @@
+/* custom.css */
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #0F172A;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #EA580C;
+  }
+  
+  .login-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #0F172A;
+    border-radius: 6px;
+    border: 1px solid transparent;
+  }
+  
+  .login-btn:hover {
+    color: #EA580C;
+    background-color: #f8fafc;
+    transform: translateY(-1px);
+    border: 1px solid #EA580C;
+  }
+  
+  .signup-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 24px;
+    color: #ffffff;
+    background-color: #EA580C;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-btn:hover {
+    background-color: #c2410c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
