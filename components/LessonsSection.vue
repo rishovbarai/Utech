@@ -138,6 +138,8 @@
     order: 1;
     flex-grow: 1;
     z-index: 1;
+    top: 2rem;
+     position: relative;
   }
   
   .section-text {
@@ -531,6 +533,163 @@
     .vector-14 {
       height: 8px;
       bottom: 0;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .lessons-section {
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .col {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .section-text {
+      width: 100%;
+      height: auto;
+      order: 1;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .secondary-headline {
+      width: 100%;
+      font-size: 48px;
+      line-height: 52.8px;
+      text-align: center;
+    }
+
+    .list {
+      width: 100%;
+      order: 2;
+      padding: 0 16px;
+    }
+
+    .list-item-with {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .icon {
+      flex-shrink: 0;
+    }
+
+    .text {
+      width: 100%;
+      font-size: 18px;
+      line-height: 28.8px;
+    }
+
+    .button {
+      width: 100%;
+      order: 3;
+      padding: 0 16px;
+    }
+
+    .text-container {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .group-51 {
+      width: 100%;
+      height: auto;
+      order: 4;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .blob-lesson {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .desktop-lesson {
+      width: 100%;
+      height: auto;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .content-box {
+      width: 90%;
+      max-width: 350px;
+      margin: 20px auto;
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+    }
+
+    .star-icon {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .lessons-section {
+      padding: 32px 16px;
+      gap: 32px;
+    }
+
+    .col {
+      gap: 24px;
+    }
+
+    .secondary-headline {
+      font-size: 36px;
+      line-height: 39.6px;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 25.6px;
+    }
+
+    .list {
+      padding: 0 8px;
+    }
+
+    .list-item-with {
+      margin-bottom: 12px;
+    }
+
+    .button {
+      padding: 0 8px;
+    }
+
+    .group-51 {
+      margin-top: 32px;
+    }
+
+    .content-box {
+      width: 95%;
+      margin: 16px auto;
+    }
+
+    .blob-lesson {
+      max-width: 100%;
+    }
+
+    .desktop-lesson {
+      max-width: 100%;
     }
   }
   </style>

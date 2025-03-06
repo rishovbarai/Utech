@@ -44,4 +44,154 @@
   .col2 {
     flex: 1;
   }
+
+  @media (max-width: 1024px) {
+    .student-section {
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .col1 {
+      width: 100%;
+      height: auto;
+      order: 2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .col1 img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+
+    .col2 {
+      width: 393px;
+      height: auto;
+      order: 1;
+      padding: 0;
+      gap: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .top {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .headline {
+      width: 100%;
+      font-size: 48px;
+      line-height: 52.8px;
+      position: relative;
+    }
+
+    .headline span {
+      display: inline-block;
+    }
+
+    .headline img {
+      position: absolute;
+      top: -36px;
+      right: 4rem;
+      width: 63px;
+      height: 63px;
+    }
+
+    .paragraph {
+      width: 100%;
+      font-size: 18px;
+      line-height: 28.8px;
+      margin-top: 16px;
+    }
+
+    .buttons-group {
+      width: 333px;
+      height: 56px;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 16px;
+    }
+
+    .button {
+      width: 100%;
+      height: 56px;
+      padding: 16px 8px;
+    }
+
+    .text-container {
+      width: 301px;
+      height: 24px;
+      padding-right: 16px;
+    }
+
+    .button-text {
+      width: 285px;
+      height: 24px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .student-section {
+      padding: 32px 16px;
+      gap: 32px;
+    }
+
+    .col2 {
+      width: 100%;
+      padding: 0 8px;
+      gap: 24px;
+    }
+
+    .headline {
+      font-size: 36px;
+      line-height: 39.6px;
+    }
+
+    .headline img {
+      width: 48px;
+      height: 48px;
+      top: -24px;
+      right: 2rem;
+    }
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 25.6px;
+      margin-top: 12px;
+    }
+
+    .buttons-group {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .button {
+      padding: 12px 8px;
+    }
+
+    .text-container {
+      width: 100%;
+    }
+
+    .button-text {
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .col1 img {
+      max-width: 100%;
+    }
+  }
   </style>

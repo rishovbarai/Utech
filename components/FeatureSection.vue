@@ -385,4 +385,148 @@
   .feature-body {
     z-index: 1;
   }
+
+  @media (max-width: 1024px) {
+    .feature-section {
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .col {
+      width: 100%;
+      height: auto;
+      order: 1;
+      padding: 0 16px;
+    }
+
+    .section-text {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .secondary-headline {
+      width: 100%;
+      font-size: 48px;
+      line-height: 52.8px;
+      text-align: center;
+    }
+
+    .highlight-container {
+      display: inline-block;
+      position: relative;
+    }
+
+    .vector-14 {
+      position: absolute;
+      bottom: -2px;
+      width: 100%;
+      height: 12px;
+    }
+
+    .paragraph {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28.8px;
+    }
+
+    .buttons-group {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .col.right {
+      width: 100%;
+      height: auto;
+      order: 2;
+      position: relative;
+      margin-top: 32px;
+    }
+
+    .feature-body {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .star-icon {
+      display: none;
+    }
+
+    .content-box {
+      width: 90%;
+      max-width: 350px;
+      position: relative;
+      left: auto;
+      right: auto;
+      margin: 20px auto;
+    }
+
+    .image1, .image2, .image3 {
+      position: relative;
+      width: 80%;
+      max-width: 250px;
+      height: auto;
+      right: auto;
+      bottom: auto;
+      margin: 10px auto;
+    }
+
+    .user-thumbnail {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      right: auto;
+      bottom: auto;
+      margin: 10px auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .feature-section {
+      width: 393px;
+      padding: 32px 16px;
+      gap: 32px;
+    }
+
+    .col {
+      padding: 0 8px;
+    }
+
+    .secondary-headline {
+      font-size: 36px;
+      line-height: 39.6px;
+    }
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 25.6px;
+    }
+
+    .content-box {
+      width: 95%;
+      margin: 16px auto;
+    }
+
+    .image1, .image2, .image3 {
+      width: 90%;
+      margin: 8px auto;
+    }
+
+    .user-thumbnail {
+      width: 50px;
+      height: 50px;
+      margin: 8px auto;
+    }
+  }
   </style>

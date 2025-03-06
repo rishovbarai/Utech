@@ -30,43 +30,45 @@
       </div>
       <div class="press">
         <div class="trusted-by">Trusted by leading companies</div>
-        <img src="/black-and-white-collection-3.png" alt="Black and White Collection 3" class="black-and-white-collection">
-        <img src="/black-and-white-collection-2.png" alt="Black and White Collection 2" class="black-and-white-collection">
-        <img src="/black-and-white-collection-11.png" alt="Black and White Collection 11" class="black-and-white-collection">
-        <img src="/black-and-white-collection-20.png" alt="Black and White Collection 20" class="black-and-white-collection">
-        <img src="/black-and-white-collection-1.png" alt="Black and White Collection 1" class="black-and-white-collection">
+        <div class="black-and-white-collections" style="display: contents;">
+          <img src="/black-and-white-collection-3.png" alt="Black and White Collection 3" class="black-and-white-collection">
+          <img src="/black-and-white-collection-2.png" alt="Black and White Collection 2" class="black-and-white-collection">
+          <img src="/black-and-white-collection-11.png" alt="Black and White Collection 11" class="black-and-white-collection">
+          <img src="/black-and-white-collection-20.png" alt="Black and White Collection 20" class="black-and-white-collection">
+          <img src="/black-and-white-collection-1.png" alt="Black and White Collection 1" class="black-and-white-collection">
+        </div>
       </div>
     </div>
     <div class="group-50">
-      <div class="student" style="position: absolute; top: 80px; left: 1089.66px;">
-        <img src="/Student.png" alt="Student" style="width: 270.34px; height: 347.68px;">
+      <div class="student">
+        <img src="/Student.png" alt="Student" class="student-img">
       </div>
 
-      <div class="chat" style="width: 235px; height: 228px; position: absolute; top: 80px; left: 875px; gap: 16px; z-index: 2;">
-        <div class="row" style="width: 235px; height: 45px; gap: 10px; background: #FFFFFF;">
-          <div class="chat-bubble" style="width: 201px; height: 45px; gap: 10px; border-radius: 15px 15px 3px 15px; padding: 8px 16px; background: #FFFFFF; box-shadow: 0px 0px 4px 0px #00000012, 0px 4px 6px -1px #0000001A;">
-            <div class="text" style="width: 169px; height: 29px; font-family: Roboto; font-weight: 400; font-size: 18px; line-height: 28.8px; letter-spacing: 0%; color: #0F172A;">Nunc, at libero neque</div>
+      <div class="chat">
+        <div class="row">
+          <div class="chat-bubble">
+            <div class="text">Nunc, at libero neque</div>
           </div>
         </div>
-        <div class="row" style="width: 235px; height: 45px; gap: 10px;">
-          <div class="chat-bubble" style="width: 122px; height: 45px; gap: 10px; border-radius: 15px 15px 3px 15px; padding: 8px 16px; background: #FFFFFF; box-shadow: 0px 0px 4px 0px #00000012, 0px 4px 6px -1px #0000001A;">
-            <div class="text" style="width: 90px; height: 29px; font-family: Roboto; font-weight: 400; font-size: 18px; line-height: 28.8px; letter-spacing: 0%; color: #0F172A;">Viverra sed</div>
+        <div class="row">
+          <div class="chat-bubble">
+            <div class="text">Viverra sed</div>
           </div>
         </div>
-        <div class="chat-bubble" style="width: 235px; height: 45px; gap: 10px; border-radius: 15px 15px 15px 3px; padding: 8px 16px; background: #334155; box-shadow: 0px 0px 4px 0px #00000012, 0px 4px 6px -1px #0000001A;">
-          <div class="text" style="width: 203px; height: 29px; font-family: Roboto; font-weight: 400; font-size: 18px; line-height: 28.8px; letter-spacing: 0%; color: #FFFFFF;">Turpis platea nunc mattis</div>
+        <div class="chat-bubble dark">
+          <div class="text">Turpis platea nunc mattis</div>
         </div>
-        <div class="chat-bubble" style="width: 186px; height: 45px; gap: 10px; border-radius: 15px 15px 15px 3px; padding: 8px 16px; background: #334155; box-shadow: 0px 0px 4px 0px #00000012, 0px 4px 6px -1px #0000001A;">
-          <div class="text" style="width: 154px; height: 29px; font-family: Roboto; font-weight: 400; font-size: 18px; line-height: 28.8px; letter-spacing: 0%; color: #FFFFFF;">Vitae viverra ut non</div>
+        <div class="chat-bubble dark">
+          <div class="text">Vitae viverra ut non</div>
         </div>
       </div>
 
-      <div class="teacher" style="position: absolute; top: 279px; left: 1042px; width: 306.60px; height: 345.53px; z-index: 1;">
-        <img src="/Teacher.png" alt="Teacher" style="width: 100%; height: 100%; position: relative; transform: scaleX(-1); right: -19rem;">
+      <div class="teacher">
+        <img src="/Teacher.png" alt="Teacher" class="teacher-img">
       </div>
 
-      <div class="icons" style="position: absolute; width: 159px; height: 128px; top: 465px; left: 1074px; z-index: 2;">
-        <img src="/Icons.png" alt="Icons" style="width: 100%; height: 100%;">
+      <div class="icons">
+        <img src="/Icons.png" alt="Icons" class="icons-img">
       </div>
     </div>
   </section>
@@ -80,10 +82,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 80px;
-  gap: 80px;
-  width: 1440px;
-  height: 704.53px;
+  width: 393px;
+  height: 847px;
+  padding: 48px 16px;
+  gap: 48px;
   flex: none;
   order: 1;
   align-self: stretch;
@@ -95,10 +97,9 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 80px;
-  isolation: isolate;
-  width: 575.4px;
-  height: 524px;
+  gap: 32px;
+  width: 361px;
+  height: 374px;
   flex: none;
   order: 0;
   flex-grow: 1;
@@ -1049,5 +1050,170 @@
   flex: none;
   order: 2;
   flex-grow: 0;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+  }
+  .group-50 {
+        width: 361px;
+        height: 329px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .student, .teacher, .icons {
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .student-img, .teacher-img, .icons-img {
+        width: 80%;
+        height: auto;
+      }
+
+      .chat {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .chat-bubble {
+        width: 90%;
+        max-width: 235px;
+        padding: 8px 16px;
+        border-radius: 15px 15px 3px 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px 0px #00000012, 0px 4px 6px -1px #0000001A;
+      }
+
+      .chat-bubble.dark {
+        background: #334155;
+        border-radius: 15px 15px 15px 3px;
+      }
+
+      .text {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0F172A;
+      }
+
+      .chat-bubble.dark .text {
+        color: #FFFFFF;
+      }
+
+  .col {
+    width: 393px;
+    height: 70px;
+    padding-top: 48px;
+    padding-right: 16px;
+    padding-bottom: 48px;
+    padding-left: 16px;
+    gap: 48px;
+  }
+
+  .section-text {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+  }
+
+  .top {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-headline {
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .paragraph {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .buttons-group {
+    width: 100%;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .button, .button-2 {
+    width: 50%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .button-text {
+    font-size: 20px;
+  }
+
+  .button-2 .button-text {
+    font-size: 18px;
+  }
+
+  .press {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .trusted-by {
+    text-align: center;
+  }
+
+  .black-and-white-collection {
+    width: 24px;
+    height: 24px;
+  }
+
+  .group-50 {
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+
+  .student, .teacher, .icons {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
+  .chat {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
+  .row, .chat-bubble {
+    width: 100%;
+    height: auto;
+  }
+
+  .chat-bubble .text {
+    font-size: 16px;
+  }
 }
 </style>

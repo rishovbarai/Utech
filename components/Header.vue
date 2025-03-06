@@ -1,35 +1,32 @@
 <template>
   <header class="header">
     <div class="header-left">
-      <!-- Uteach Logo -->
       <img src="/logo.png" alt="Uteach Logo" class="logo">
-      <nav :class="{ 'nav-open': isMenuOpen }">
-        <ul class="menu">
-          <li class="menu-item"><a href="#" class="menu-link">Products</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">Solutions</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
-          <li class="menu-item dropdown">
-            <a href="#" class="menu-link">Resources</a>
-            <img src="/down-arrow.png" alt="Dropdown Arrow" class="dropdown-arrow">
-          </li>
-        </ul>
-        <div class="mobile-buttons">
+    </div>
+    
+    <nav :class="{ 'nav-open': isMenuOpen }">
+      <ul class="menu">
+        <li class="menu-item"><a href="#" class="menu-link">Products</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Solutions</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+        <li class="menu-item dropdown">
+          <a href="#" class="menu-link">Resources</a>
+          <img src="/down-arrow.png" alt="Dropdown Arrow" class="dropdown-arrow">
+        </li>
+        <li class="menu-item">
           <a href="#" class="btn btn-outline-primary login-btn">Log In</a>
+        </li>
+        <li class="menu-item">
           <a href="#" class="btn btn-primary signup-btn">Sign Up Now</a>
-        </div>
-      </nav>
-    </div>
-    <div class="header-right">
-      <div class="desktop-buttons">
-        <a href="#" class="btn btn-outline-primary login-btn">Log In</a>
-        <a href="#" class="btn btn-primary signup-btn">Sign Up Now</a>
-      </div>
-      <button class="burger-menu" @click="toggleMenu" :class="{ 'is-open': isMenuOpen }">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="burger-menu" @click="toggleMenu" :class="{ 'is-open': isMenuOpen }">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
 </template>
 
@@ -62,7 +59,6 @@ const toggleMenu = () => {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 24px;
 }
 
 .logo {
@@ -129,8 +125,6 @@ const toggleMenu = () => {
   align-items: center;
   padding: 12px 8px;
   gap: 8px;
-  width: 85px;
-  height: 48px;
 }
 
 .menu-link {
@@ -160,16 +154,6 @@ const toggleMenu = () => {
 
 .dropdown:hover .dropdown-arrow {
   transform: rotate(180deg);
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.mobile-buttons {
-  display: none;
 }
 
 .login-btn {
@@ -207,95 +191,33 @@ const toggleMenu = () => {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .header {
-    padding: 0 40px;
-  }
-  
-  .main-section {
-    flex-direction: column;
-    height: auto;
-    padding: 40px;
-    gap: 40px;
-  }
-
-  .col {
     width: 100%;
-    height: auto;
-    align-items: center;
-    text-align: center;
-  }
-
-  .group-50 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: 40px;
-  }
-
-  .student, .teacher, .chat, .icons {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-  }
-
-  .student img, .teacher img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    transform: none;
-    right: 0;
-  }
-
-  .chat {
-    max-width: 300px;
-    margin: 20px auto;
-  }
-
-  .icons {
-    max-width: 200px;
-    margin: 20px auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 0 20px;
+    height: 67px;
+    padding: 16px;
+    justify-content: space-between;
   }
 
   .burger-menu {
     display: block;
   }
 
-  .desktop-buttons {
-    display: none;
-  }
-
-  .mobile-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 24px;
-  }
-
   nav {
     position: fixed;
-    top: 80px;
-    right: -100%;
-    width: 100%;
-    height: calc(100vh - 80px);
+    top: 67px;
+    left: 0;
+    width: 392px;
+    height: calc(100vh - 67px);
     background-color: white;
     transition: all 0.3s ease;
     padding: 24px;
     overflow-y: auto;
+    transform: translateX(-100%);
   }
 
   nav.nav-open {
-    right: 0;
+    transform: translateX(0);
   }
 
   .menu {
@@ -307,7 +229,6 @@ const toggleMenu = () => {
   .menu-item {
     width: 100%;
     justify-content: center;
-    height: auto;
   }
 
   .dropdown {
@@ -318,31 +239,11 @@ const toggleMenu = () => {
 
 @media (max-width: 480px) {
   .header {
-    padding: 0 16px;
+    width: 393px;
   }
 
   .logo {
     height: 32px;
-  }
-  
-  .main-section {
-    padding: 20px;
-  }
-
-  .col {
-    gap: 40px;
-  }
-
-  .student img, .teacher img {
-    max-width: 250px;
-  }
-
-  .chat {
-    max-width: 250px;
-  }
-
-  .icons {
-    max-width: 150px;
   }
 }
 </style>

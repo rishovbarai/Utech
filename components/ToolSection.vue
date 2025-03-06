@@ -256,4 +256,140 @@
     top: 0;
     transform: translateX(-50%);
   }
+
+  /* Add responsive styles */
+  @media (max-width: 1024px) {
+    .tool-section {
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+      gap: 40px;
+      flex-direction: column;
+    }
+
+    .section-text {
+      width: 100%;
+      height: auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .top {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .secondary-headline {
+      width: 100%;
+      font-size: 48px;
+      line-height: 52.8px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .paragraph {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28.8px;
+      padding: 0 16px;
+    }
+
+    .paragraph br {
+      display: none;
+    }
+
+    .content {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .desktop-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin: 0;
+    }
+
+    .lines {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px 0;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+    }
+
+    .lines::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+
+    .thumbnail-image {
+      position: relative !important;
+      left: auto !important;
+      top: auto !important;
+      width: 80px !important;
+      height: 80px !important;
+      margin: 0 10px;
+      flex-shrink: 0;
+    }
+
+    /* Hide decorative vectors in mobile */
+    .vector-15, .vector-17, .vector-19,
+    .vector-21, .vector-22, .vector-23,
+    .vector-24, .vector-25, .vector-26 {
+      display: none;
+    }
+
+    .left-tool-image,
+    .right-tool-image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tool-section {
+      padding: 32px 16px;
+      gap: 24px;
+    }
+
+    .secondary-headline {
+      font-size: 36px;
+      line-height: 39.6px;
+      margin-bottom: 12px;
+    }
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 25.6px;
+      padding: 0 8px;
+    }
+
+    .desktop-image {
+      max-width: 100%;
+    }
+
+    .lines {
+      gap: 15px;
+      padding: 15px 0;
+    }
+
+    .thumbnail-image {
+      width: 60px !important;
+      height: 60px !important;
+      margin: 0 8px;
+    }
+  }
 </style>

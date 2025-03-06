@@ -109,4 +109,133 @@ const prevSlide = () => {
     border-radius: 20px;
     transition: transform 0.5s ease;
 }
+
+@media (max-width: 1024px) {
+  .testimonial-section {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .row {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .section-text {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .top {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .secondary-headline {
+    width: 100%;
+    font-size: 48px;
+    line-height: 52.8px;
+    text-align: center;
+  }
+
+  .arrows {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+
+  .content-box {
+    width: 100%;
+    max-width: 412px;
+    height: auto;
+    min-height: 305px;
+    margin: 0 auto;
+  }
+
+  .paragraph {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+  .user-card {
+    width: 100%;
+    height: auto;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    width: 393px;
+    padding: 32px 16px;
+    gap: 32px;
+  }
+
+  .row {
+    gap: 20px;
+  }
+
+  .secondary-headline {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .slider {
+    padding: 0 16px;
+  }
+
+  .content-box {
+    padding: 24px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .user-card {
+    padding-top: 20px;
+  }
+
+  .user-thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-name {
+    font-size: 16px;
+  }
+
+  .user-role {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .button img {
+    width: 20px;
+    height: 20px;
+  }
+}
 </style>
